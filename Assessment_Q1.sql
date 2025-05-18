@@ -3,7 +3,7 @@
 
 SELECT 
     u.id AS owner_id,
-    u.name,
+    concat(u.first_name, ' ', u.last_name) AS name
 
     -- Count number of funded savings plans per user
     COUNT(DISTINCT CASE 
